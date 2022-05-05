@@ -50,7 +50,7 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   try {
-    const tagData = await Tag.destroy({
+    const tagData = await Tag.update({
       where: {
         id: req.params.id,
       },
